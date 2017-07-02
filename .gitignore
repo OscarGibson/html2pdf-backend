@@ -1,0 +1,5 @@
+*.pyc
+application/test_app/
+db.sqlite3
+venv35/
+src/settings/local.py
