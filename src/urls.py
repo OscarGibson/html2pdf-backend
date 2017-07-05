@@ -17,14 +17,13 @@ from django.conf.urls import url, include
 from django.contrib import admin
 
 from applications.api.routes import api_router
-#from applications.test_app import views as test_views
 from applications.document import urls as document_urls
 from applications.FacebookLogin import urls as FacebookLogin_urls
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^account/', include('allauth.urls')),
-    url(r'^api/', include(api_router.urls)),
+    #url(r'^api/', include(api_router.urls)),
     url(r'^document/', include(document_urls)),
     url(r'^rest-auth/', include('rest_auth.urls')),
     url(r'^rest-auth/registration/account-confirm-email/',
