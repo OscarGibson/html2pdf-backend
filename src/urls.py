@@ -16,7 +16,6 @@ Including another URLconf
 from django.conf.urls import url, include
 from django.contrib import admin
 
-from applications.api.routes import api_router
 from applications.document import urls as document_urls
 from applications.FacebookLogin import urls as FacebookLogin_urls
 
